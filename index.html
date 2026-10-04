@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2563eb">
+  <title>Tap Counter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="blue">
+  <main class="counter-app" aria-label="Meeting head counter">
+    <section class="count-panel" aria-label="Current count">
+      <div id="count" class="count" aria-live="polite" aria-atomic="true">0</div>
+    </section>
+    <section class="controls" aria-label="Count controls">
+      <button id="addButton" class="count-button add-button" type="button" aria-label="Add one">+1</button>
+      <button id="subtractButton" class="count-button subtract-button" type="button" aria-label="Subtract one">−1</button>
+    </section>
+    <button id="clearButton" class="clear-button" type="button">Clear Count</button>
+    <fieldset class="theme-picker">
+      <legend>Theme</legend>
+      <div class="theme-options">
+        <button class="theme-button" type="button" data-set-theme="blue" aria-label="Blue theme">Blue</button>
+        <button class="theme-button" type="button" data-set-theme="orange" aria-label="Orange theme">Orange</button>
+        <button class="theme-button" type="button" data-set-theme="green" aria-label="Green theme">Green</button>
+        <button class="theme-button" type="button" data-set-theme="dark" aria-label="Dark theme">Dark</button>
+      </div>
+    </fieldset>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
