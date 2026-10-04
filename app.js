@@ -79,4 +79,11 @@ for (const button of themeButtons) {
   });
 }
 
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./service-worker.js")
+      .catch((error) => console.warn("Offline support could not be enabled.", error));
+  });
+}
+
 render();
